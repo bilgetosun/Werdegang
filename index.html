@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>My Journey | From Bodrum to Berlin</title>
 
     <style>
@@ -33,7 +32,8 @@
             font-size: 17px;
         }
 
-        .city-photos {
+        .city-photos,
+        .activity-gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -45,12 +45,22 @@
             min-width: 0;
         }
 
-        .city-photos img {
+        .city-photos img,
+        .activity-gallery img {
             width: 100%;
             height: 190px;
             object-fit: cover;
             border-radius: 12px;
             display: block;
+        }
+
+        .activity-gallery div {
+            flex: 1 1 250px;
+            min-width: 0;
+        }
+
+        .activity-gallery .book-club {
+            flex-basis: 100%;
         }
 
         .photo-caption {
@@ -70,11 +80,13 @@
                 font-size: 32px;
             }
 
-            .city-photos div {
+            .city-photos div,
+            .activity-gallery div {
                 flex-basis: 100%;
             }
 
-            .city-photos img {
+            .city-photos img,
+            .activity-gallery img {
                 height: 220px;
             }
         }
@@ -101,28 +113,20 @@
     </p>
 
     <div class="city-photos">
-
         <div>
             <img src="bodrum.jpg" alt="Bodrum, Turkey">
-            <p class="photo-caption">
-                Bodrum, where my journey began
-            </p>
+            <p class="photo-caption">Bodrum, where my journey began</p>
         </div>
 
         <div>
             <img src="izmir.jpg" alt="Izmir, Turkey">
-            <p class="photo-caption">
-                Izmir, where I went to high school
-            </p>
+            <p class="photo-caption">Izmir, where I went to high school</p>
         </div>
 
         <div>
             <img src="istanbul.jpg" alt="Istanbul, Turkey">
-            <p class="photo-caption">
-                Istanbul, where I studied Business Administration
-            </p>
+            <p class="photo-caption">Istanbul, where I studied Business Administration</p>
         </div>
-
     </div>
 
     <h2>Education and First Steps in My Career</h2>
@@ -151,14 +155,12 @@
     </p>
 
     <div class="city-photos">
-
         <div>
             <img src="berlin.jpg" alt="Berlin, Germany">
             <p class="photo-caption">
                 Berlin, my home for the past five and a half years
             </p>
         </div>
-
     </div>
 
     <p>
@@ -170,18 +172,44 @@
     <h2>Life Beyond Work and Studies</h2>
 
     <p>
-        Outside work and university, I run a book club, play tennis,
-        and enjoy hiking and travelling. Exploring new places,
-        discovering new ideas through books, and spending time
-        outdoors are all important parts of my life.
+        Outside work and university, I enjoy spending time outdoors,
+        especially hiking and exploring new landscapes. I also run a
+        book club, where books bring people together and create
+        opportunities to exchange ideas. Travelling, discovering new
+        places, and learning from different experiences are important
+        parts of my life.
     </p>
+
+    <div class="activity-gallery">
+        <div>
+            <img src="hike-cliffs.jpg" alt="A landscape I explored while hiking">
+            <p class="photo-caption">Hiking and exploring new landscapes</p>
+        </div>
+
+        <div>
+            <img src="hike-clouds.jpg" alt="Clouds over a hiking landscape">
+            <p class="photo-caption">Finding new perspectives outdoors</p>
+        </div>
+
+        <div>
+            <img src="hike-volcano.jpg" alt="Volcanic landscape from a hike">
+            <p class="photo-caption">Discovering extraordinary places on foot</p>
+        </div>
+
+        <div class="book-club">
+            <img src="cob.png" alt="My book club, COB">
+            <p class="photo-caption">COB — my book club</p>
+        </div>
+    </div>
 
     <h2>What Comes Next?</h2>
 
     <p>
-        Looking back, every city has contributed something different
-        to who I am today. I am excited to see where this next chapter
-        in Berlin will take me, both personally and professionally.
+        Looking back, every city and experience has contributed
+        something different to who I am today. I am excited to see
+        where this next chapter in Berlin will take me, both personally
+        and professionally, and how I can combine my business background
+        with new technical skills.
     </p>
 
 </body>
