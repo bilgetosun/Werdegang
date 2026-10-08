@@ -75,8 +75,17 @@
         }
 
         .activity-gallery .book-club {
-            flex-basis: 100%;
-        }
+    flex: 1 1 250px;
+    min-width: 0;
+}
+
+.activity-gallery .book-club img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
 
         @media (max-width: 600px) {
             body {
@@ -181,10 +190,7 @@
 
     <p>
         Outside work and university, I enjoy hiking, travelling,
-        and exploring new landscapes. Some of my favourite adventures
-        have taken me to the cliffs of Marseille, the clouds of Lesotho,
-        and the volcanic landscapes of Mount Etna in Sicily.
-        I also run a book club, where books bring people together
+        and exploring new landscapes. I also run a book club, where books bring people together
         and create opportunities to exchange ideas. For me, travelling
         is a way to discover new places, gain new perspectives,
         and collect memories along the way.
@@ -194,21 +200,21 @@
         <div>
             <img src="hike-cliffs.jpg" alt="Hiking near the cliffs of Marseille">
             <p class="photo-caption">
-                Marseille — enjoying the view from the cliffs
+                Marseille 
             </p>
         </div>
 
         <div>
             <img src="hike-clouds.jpg" alt="Hiking above the clouds in Lesotho">
             <p class="photo-caption">
-                Lesotho — getting a little closer to the clouds
+                Lesotho 
             </p>
         </div>
 
         <div>
             <img src="hike-volcano.jpg" alt="Hiking on Mount Etna in Sicily">
             <p class="photo-caption">
-                Mount Etna — taking in the volcanic views
+                Mount Etna 
             </p>
         </div>
 
