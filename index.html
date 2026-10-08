@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Journey | From Bodrum to Berlin</title>
 
     <style>
@@ -40,7 +41,7 @@
             margin: 25px 0;
         }
 
-        .city-photos div {
+        .city-photos > div {
             flex: 1 1 220px;
             min-width: 0;
         }
@@ -54,7 +55,7 @@
             display: block;
         }
 
-        .activity-gallery div {
+        .activity-gallery > div {
             flex: 1 1 250px;
             min-width: 0;
         }
@@ -74,19 +75,6 @@
             margin: 0 0 10px;
         }
 
-        .activity-gallery .book-club {
-    flex: 1 1 250px;
-    min-width: 0;
-}
-
-.activity-gallery .book-club img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-}
-
         @media (max-width: 600px) {
             body {
                 margin: 15px auto;
@@ -97,8 +85,8 @@
                 font-size: 32px;
             }
 
-            .city-photos div,
-            .activity-gallery div {
+            .city-photos > div,
+            .activity-gallery > div {
                 flex-basis: 100%;
             }
 
@@ -132,17 +120,17 @@
     <div class="city-photos">
         <div>
             <img src="bodrum.jpg" alt="Bodrum, Turkey">
-            <p class="photo-caption">Bodrum, where my journey began</p>
+            <p class="photo-caption">Bodrum, Turkey — where my journey began</p>
         </div>
 
         <div>
             <img src="izmir.jpg" alt="Izmir, Turkey">
-            <p class="photo-caption">Izmir, where I went to high school</p>
+            <p class="photo-caption">Izmir, Turkey — where I went to high school</p>
         </div>
 
         <div>
             <img src="istanbul.jpg" alt="Istanbul, Turkey">
-            <p class="photo-caption">Istanbul, where I studied Business Administration</p>
+            <p class="photo-caption">Istanbul, Turkey — where I lived for 8 years before Berlin </p>
         </div>
     </div>
 
@@ -175,7 +163,7 @@
         <div>
             <img src="berlin.jpg" alt="Berlin, Germany">
             <p class="photo-caption">
-                Berlin, my home for the past five and a half years
+                Berlin, Germany — my home for the past five and a half years
             </p>
         </div>
     </div>
@@ -190,15 +178,13 @@
 
     <p>
         Outside work and university, I enjoy hiking, travelling,
-        and exploring new landscapes. I also run a book club, where books bring people together
-        and create opportunities to exchange ideas. For me, travelling
-        is a way to discover new places, gain new perspectives,
-        and collect memories along the way.
+        playing tennis. I also run a book club, where books bring people
+        together and create opportunities to exchange ideas.
     </p>
 
     <div class="activity-gallery">
         <div>
-            <img src="hike-cliffs.jpg" alt="Hiking near the cliffs of Marseille">
+            <img src="hike-cliffs.jpg" alt="Hiking near Marseille, France">
             <p class="photo-caption">
                 Marseille 
             </p>
@@ -212,21 +198,20 @@
         </div>
 
         <div>
-            <img src="hike-volcano.jpg" alt="Hiking on Mount Etna in Sicily">
+            <img src="hike-volcano.jpg" alt="Hiking on Mount Etna in Sicily, Italy">
             <p class="photo-caption">
-                Mount Etna 
+                Mount Etna
             </p>
         </div>
 
         <p class="pose-joke">
-            Different countries, different landscapes, same pose.
-            At this point, it's less of a coincidence and more of a personal brand. 😂
+            Different landscapes, same hiking pose. Apparently, I have a signature style.
         </p>
 
-        <div class="book-club">
+        <div>
             <img src="cob.png" alt="My book club, COB">
             <p class="photo-caption">
-                COB — bringing people together, one book at a time
+                COB — sharing books and ideas
             </p>
         </div>
     </div>
