@@ -27,6 +27,33 @@
         font-size: 17px;
     }
 </style>
+    
+    .city-photos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 25px 0;
+    }
+
+    .city-photos div {
+        flex: 1 1 220px;
+        min-width: 0;
+    }
+
+    .city-photos img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .photo-caption {
+        font-size: 14px;
+        color: #607d8b;
+        text-align: center;
+        margin-top: 8px;
+    }
 <head>
     <style>
     body {
@@ -71,6 +98,20 @@
 
     <h2>Where It All Began</h2>
 
+<div class="city-photos">
+    <div>
+        <img src="bodrum.jpg" alt="Bodrum, Turkey">
+        <p class="photo-caption">Bodrum, where my journey began</p>
+    </div>
+    <div>
+        <img src="izmir.jpg" alt="Izmir, Turkey">
+        <p class="photo-caption">Izmir, where I went to high school</p>
+    </div>
+    <div>
+        <img src="istanbul.jpg" alt="Istanbul, Turkey">
+        <p class="photo-caption">Istanbul, where I studied Business Administration</p>
+    </div>
+</div>
     <p>
         I was born in Bodrum, Turkey, a beautiful coastal town.
         I later moved to Izmir for high school and then to
@@ -95,6 +136,12 @@
 
     <h2>A New Chapter in Berlin</h2>
 
+<div class="city-photos">
+    <div>
+        <img src="berlin.jpg" alt="Berlin, Germany">
+        <p class="photo-caption">Berlin, my home for the past five and a half years</p>
+    </div>
+</div>
     <p>
         Five and a half years ago, I moved back to Berlin.
         I now work at BASF as a transfer pricing specialist.
